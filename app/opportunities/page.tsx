@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { opportunities } from "../data/opportunities";
 
 export default function Opportunities() {
@@ -20,6 +21,10 @@ export default function Opportunities() {
           </p>
 
           <p>{job.description}</p>
+
+          <Link href={`/opportunities/${job.id}`}>
+            View opportunity
+          </Link>
         </div>
       ))}
     </main>
