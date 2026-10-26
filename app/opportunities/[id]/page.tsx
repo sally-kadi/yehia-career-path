@@ -1,3 +1,5 @@
+
+import Link from "next/link";
 import { opportunities } from "../../data/opportunities";
 
 type OpportunityPageProps = {
@@ -19,7 +21,14 @@ export default async function OpportunityPage({
     return (
       <main>
         <h1>Opportunity not found</h1>
-        <p>Sorry, we couldn't find this opportunity.</p>
+
+        <p>
+          Sorry, we couldn&apos;t find this opportunity.
+        </p>
+
+        <Link href="/opportunities">
+          Back to opportunities
+        </Link>
       </main>
     );
   }
@@ -37,6 +46,10 @@ export default async function OpportunityPage({
       </p>
 
       <p>{opportunity.description}</p>
+
+      <Link href="/opportunities">
+        Back to opportunities
+      </Link>
     </main>
   );
 }

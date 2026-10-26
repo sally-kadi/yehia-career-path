@@ -1,7 +1,8 @@
+
 export default function Plan() {
   return (
     <main>
-      <h1>Yehia's Career Plan</h1>
+      <h1>Yehia&apos;s Career Plan</h1>
 
       <p>
         A simple plan to help Yehia move toward his first job.

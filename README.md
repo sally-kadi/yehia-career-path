@@ -1,22 +1,46 @@
 # Yehia's Career Path
 
 ## Student
-Full Name: sally ali kadi
+Full Name: Sally Ali Kadi
 
 ## Project Description
-Yehia's Career Path is a small Next.js website that helps Yehia organize his career journey. It includes a career plan, job opportunities, opportunity details, a dashboard, and an applications page.
+Yehia's Career Path is a Next.js website that helps Yehia, a Computer Science graduate from Lebanese University, First Branch, organize his career journey.
+
+The website includes a career plan, job opportunities, dynamic opportunity details, a dashboard overview, and an applications page.
 
 ## How to Run the Project
 
-Install the dependencies:
+### 1. Clone the repository
 
+```bash
+git clone https://github.com/sally-kadi/yehia-career-path.git
+```
+
+### 2. Open the project folder
+
+```bash
+cd yehia-career-path
+```
+
+### 3. Switch to the Assignment 1 branch
+
+```bash
+git switch assignment-1-routing
+```
+
+### 4. Install dependencies
+
+```bash
 npm install
+```
 
-Start the development server:
+### 5. Start the development server
 
+```bash
 npm run dev
+```
 
-Then open the local address shown in the terminal.
+Open http://localhost:3000 in your browser.
 
 ## Assignment Questions
 

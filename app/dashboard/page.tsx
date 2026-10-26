@@ -1,23 +1,43 @@
+
 import Link from "next/link";
+import {
+  applications,
+  savedOpportunities,
+} from "../data/applications";
 
 export default function Dashboard() {
+  const submittedCount = applications.length;
+
+  const savedCount = savedOpportunities.length;
+
+  const interviewCount = applications.filter(
+    (application) => application.status === "Interview"
+  ).length;
+
   return (
     <main>
-      <h1>Yehia's Dashboard</h1>
+      <h1>Yehia&apos;s Dashboard</h1>
 
-      <p>Welcome to Yehia's career dashboard.</p>
+      <p>Welcome to Yehia&apos;s career dashboard.</p>
+
+      <p>
+        Keep going, Yehia! Every application brings you
+        one step closer to your career goals.
+      </p>
 
       <h2>Application Summary</h2>
 
       <ul>
         <li>
-          <strong>2</strong> Submitted Applications
+          <strong>{submittedCount}</strong> Submitted Applications
         </li>
+
         <li>
-          <strong>1</strong> Saved Opportunity
+          <strong>{savedCount}</strong> Saved Opportunities
         </li>
+
         <li>
-          <strong>1</strong> Interview
+          <strong>{interviewCount}</strong> Interview
         </li>
       </ul>
 
@@ -25,7 +45,9 @@ export default function Dashboard() {
 
       <ul>
         <li>
-          <Link href="/opportunities">View Opportunities</Link>
+          <Link href="/opportunities">
+            View Opportunities
+          </Link>
         </li>
 
         <li>
@@ -35,7 +57,9 @@ export default function Dashboard() {
         </li>
 
         <li>
-          <Link href="/plan">View Career Plan</Link>
+          <Link href="/plan">
+            View Career Plan
+          </Link>
         </li>
       </ul>
     </main>
