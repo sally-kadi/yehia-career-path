@@ -1,33 +1,84 @@
 # Yehia's Career Path
 
-## Student
-Full Name: sally ali kadi
+A career planning web application built with Next.js to organize career goals, explore job opportunities, view opportunity details, and manage applications through a dashboard.
 
-## Project Description
-Yehia's Career Path is a small Next.js website that helps Yehia organize his career journey. It includes a career plan, job opportunities, opportunity details, a dashboard, and an applications page.
+## Project Overview
 
-## How to Run the Project
+Yehia's Career Path is a web development project that demonstrates my understanding of Next.js routing, dynamic pages, shared layouts, and structured navigation.
 
-Install the dependencies:
+The application includes a career plan, job opportunities, individual opportunity detail pages, a dashboard, and an applications page.
 
-npm install
+## Features
 
-Start the development server:
+- Career planning interface.
+- Job opportunities listing.
+- Dynamic opportunity detail pages.
+- Dashboard with shared navigation.
+- Applications page.
+- Navigation between related pages.
+- Handling of unknown opportunity IDs.
 
-npm run dev
+## Technologies Used
 
-Then open the local address shown in the terminal.
+- **Framework:** Next.js
+- **UI Library:** React
+- **Language:** JavaScript
+- **Routing:** Next.js App Router
+- **Version Control:** Git and GitHub
 
-## Assignment Questions
+## My Contribution
 
-### 1. Why did you use await when reading params?
+I implemented the application's routing structure and page navigation, including dynamic opportunity routes and shared dashboard layouts.
 
-In Next.js 16, the params value is asynchronous. We use await params to access the dynamic route parameters before using the opportunity ID.
+I also worked on handling route parameters, connecting navigation links between pages, and improving consistency by placing shared dashboard navigation in the common layout.
 
-### 2. Why is the route ID a string?
+## Getting Started
 
-The ID comes from the URL, so Next.js provides it as a string. For example, the URL /opportunities/1 gives an ID of "1".
+### Prerequisites
 
-### 3. What belongs in the dashboard layout, and what belongs in each dashboard page?
+- Node.js and npm.
+- Git (optional, if cloning the repository).
 
-The dashboard layout should contain the shared dashboard navigation that appears on both dashboard pages. Each dashboard page should contain its own specific content, such as the dashboard summary or the applications list.
+### Installation
+
+1. Clone or download this repository.
+2. Open the project directory in your terminal.
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in the terminal.
+
+## Project Structure
+
+The application uses Next.js App Router conventions. Pages and layouts are organized within the `app/` directory, including routes for opportunities and the dashboard.
+
+Refer to the repository's `app/` directory for the complete route structure.
+
+## What I Learned
+
+- Creating pages and layouts with Next.js.
+- Implementing dynamic routes and reading route parameters.
+- Organizing shared layouts and navigation.
+- Linking related pages through application navigation.
+- Handling unknown opportunity IDs.
+- Running and testing a Next.js application locally.
+
+## Developer
+
+**Sally Kadi**
+
+- **GitHub:** [sally-kadi](https://github.com/sally-kadi)
+- **LinkedIn:** [Sally Kadi](https://www.linkedin.com/in/sally-kadi/)
+
+---
+
+This project was developed as part of my web development learning experience.
